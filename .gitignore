@@ -1,0 +1,11 @@
+﻿################################################################################
+# Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
+################################################################################
+
+/.vs/Plano
+/src/Plano/bin/Debug/netstandard2.0
+/src/Plano/obj
+/src/Plano.Android/bin/Debug
+/src/Plano.Android/obj
+/src/Plano.Android/Plano.Android.csproj.user
+/src/Plano.iOS/obj
