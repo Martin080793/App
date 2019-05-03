@@ -9,3 +9,5 @@
 /src/Plano.Android/obj
 /src/Plano.Android/Plano.Android.csproj.user
 /src/Plano.iOS/obj
+/src/Plano.Android/Resources/Resource.designer.cs
+/.vs

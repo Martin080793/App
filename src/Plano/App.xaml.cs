@@ -30,6 +30,9 @@ namespace Plano
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<DemoPage, MainPageViewModel>();
+            
+            containerRegistry.RegisterSingleton<IUmsatzProvider, UmsatzProvider>();
         }
     }
 }

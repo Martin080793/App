@@ -5,7 +5,24 @@
              Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Welcome to the Plano App!" />
+        <Entry Placeholder="Name" Text="{Binding Name}"  />
+        <Entry Placeholder="Betrag" Text="{Binding Betrag}"  />
+
+        <DatePicker Date="{Binding Date}" />
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="+" />
+            <Button Text="-" />
+        </StackLayout>
+        <Button Text="Umsatz hinzufügen" Command="{Binding UmsatzHinzufügenCommand}" />
+        <ListView ItemsSource="{Binding Umsätze}" Footer="" SelectedItem="{Binding SelectedUmsatz}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}"  Detail="{Binding Betrag}">                        
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
 
 </ContentPage>
